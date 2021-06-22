@@ -23,7 +23,7 @@ public class Athlete {
     	a1.bibNumber = 1;
     	a2.bibNumber = 2;
     	
-    	a1.raceLocation = "Hawaii";
-    	a2.raceStartTime = "10.00am";
+    	Athlete.raceLocation = "Hawaii";
+    	Athlete.raceStartTime = "10.00am";
     }
 }
