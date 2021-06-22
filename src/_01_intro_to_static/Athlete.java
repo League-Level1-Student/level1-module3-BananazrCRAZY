@@ -17,5 +17,13 @@ public class Athlete {
     public static void main(String[] args) {
         //create two athletes
         //print their names, bibNumbers, and the location of their race. 
+    	Athlete a1 = new Athlete("Bob", 25);
+    	Athlete a2 = new Athlete("John", 30);
+    	
+    	a1.bibNumber = 1;
+    	a2.bibNumber = 2;
+    	
+    	a1.raceLocation = "Hawaii";
+    	a2.raceStartTime = "10.00am";
     }
 }
