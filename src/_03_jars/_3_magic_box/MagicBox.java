@@ -38,8 +38,12 @@ public class MagicBox extends JPanel implements Runnable, MouseListener {
 	 */
 
 	BufferedImage backgroundImage;
-
-
+	
+	MediaPalace mp = new MediaPalace();
+	int x = getX();
+	int y = getY();
+	
+	
 	@Override
 	public void run() {
 		try {
@@ -76,7 +80,16 @@ public class MagicBox extends JPanel implements Runnable, MouseListener {
 	@Override
 	public void mouseClicked(MouseEvent e) {
 		// TODO Auto-generated method stub
-		
+		if (((x >= 0) && (x < 100)) || ((y >= 0) && (y < 100))) {
+			mp.loadImageFromWithinProject("chicken.jpg");
+			System.out.println("Cluck");
+		} else if (((x >= 100) && (x < 150) || (y >= 100) && (y <150))) {
+			mp.loadImageFromWithinProject("cow.jpg");
+			System.out.println("Moo");
+		} else {
+			mp.loadImageFromWithinProject("horse.jpg");
+			System.out.println("Neeh");
+		}
 	}
 
 	@Override

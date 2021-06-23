@@ -26,7 +26,7 @@ public class Jukebox implements Runnable {
 
 		// 1. Find an mp3 on your computer or on the Internet.
 		// 2. Create a Song object for that mp3
-
+    	Song s = new Song();
 		// 3. Play the Song
 
 		/*
