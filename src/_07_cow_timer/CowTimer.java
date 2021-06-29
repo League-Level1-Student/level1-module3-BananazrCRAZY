@@ -39,10 +39,8 @@ public class CowTimer {
 		 * You can use the .wav file in the default package, or you can download one
 		 * from freesound.org, then drag it intothe default package.
 		 */
-		if (milsec == 10000) {
-			playSound("moo.wav");
-			System.out.println("moo");
-		}
+		playSound("moo.wav");
+		System.out.println("moo");
 	}
 
 	private void playSound(String fileName) {
